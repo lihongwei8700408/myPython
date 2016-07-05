@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>在路上，有车联</title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+    <link rel="stylesheet" href="html/css/style1.css">
+    <link rel="stylesheet" href="html/css/orderPage.css">
+    <script type="text/javascript" src="html/js/zepto.min.js"></script>
+    
+</head>
+<body style="background: #eee;">
+<!-- <div class="payment"> -->
+	<div class="head">
+		<span><a class="goback"><img src="html/images/arrow.png" alt=""></a></span>
+    	<p  style="width: 100%;">下单</p>
+	</div>
+	<div style="width:100%; height:2.5em;"></div>
+	<!-- <div class="totalSum">
+		<div class="totalSum_l">
+			<p>服务名称</p>
+			<span>总计</span>
+		</div>
+		<div class="totalSum_r">
+			<p id="serviceName">标准送油</p>
+			<span id="totalPrice1">$33.00</span>
+		</div>
+	</div> -->
+	<div class="yourSelect">
+		<form action="" class="selectForm" >
+			<table width="100%" style="color:#999; margin:0.5em 0;">
+				<tr>
+					<td rowspan="2" width="15%" align="center">
+						<img src="html/images/bz.png" alt="" style="width:50%">
+					</td>
+					<td width="50%" id="serviceName">标准送油</td>
+					<td width="25%" id="totalPrice1" style="text-align: right; padding-right:1.5em;">￥33.00</td>
+				</tr>
+				<tr>
+					<td width="50%"><!-- 06：00-20：00 --></td>
+					<td width="20%" style="text-align: right; padding-right:1.5em;"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<div class="usablePoints">
+		<form action="" class="pointsForm">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="3" width="100%" style="background:#eee; padding:0.5em 1em; color:#999; font-size:0.7em;">支付详情</td>
+				</tr>
+				<tr>
+					<td colspan="2" width="50%" class="curPoints">商品总额:</td>
+					<td width="50%" class="pointsNum" id="totalPrice2">￥43.00</td>
+				</tr>
+			
+				<tr>
+					<td width="30%" class="curPoints">油金抵扣:</td>
+					<td width="50%" >
+						<div class="usedPoin"><input type="text" id="jifen" onkeyup="value=value.replace(/[^0-9]/ig,'')" pattern="[0-9]*" maxlength="10"/></div>
+						<div class="usablePoin" id="userPoint">可用油金</div>
+					</td>
+					<td width="20%" class="pointsNum" id="jifen2">￥0.00</td>
+				</tr>
+				<tr>
+					<td colspan="2" width="50%" class="curPoints"></td>
+					<td width="50%" class="pointsNum" id="pointSelect" style="">
+						
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	
+	<div class="payMethod">
+    	<p class="payMethodtit">支付方式</p>
+        
+        <div class="payMethodlist">
+        	<div class="payMethodlist_con">
+            	<span class="payImg weixin"></span>
+                <span>
+                	<p class="paytit">微信</p>
+                    <p class="paycon">推荐微信客户端用户</p>
+                </span>
+                <span class="select hover"></span>
+            </div>
+          
+        
+        </div>
+        
+    </div>
+    
+	<div style="height:3em; width:100%;"></div>
+	<div class="confirmPay">
+		<div class="heJi">合计: <span id="heji">￥28.00</span></div>
+		<a href="#"><button id="confirmp" class="qrzf">确认支付</button></a>
+	</div>
+<script type="text/javascript" src="html/js/oilPaymentPage.js"></script>
+<form id="ceshi" action="http://weixin.clejw.com/Activity/index.php" method="post">
+  	
+  	
+  	<input name="data" type="hidden" id='datas'>
+  	
+  </form>
+</body>
+</html>

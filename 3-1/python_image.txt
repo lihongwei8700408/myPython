@@ -1,0 +1,37 @@
+1、下载PIL的Source Kit（因为这个包支持全部平台） Imaging--1.1.6.tar.gz
+2、解压缩包 tar -zxvf Imaging-1.1.6.tar.gz
+
+3、进入到解压后的目录 cd Imaging-1.1.6
+4、Build pakage: python setup.py build_ext -i
+5、测试;  python selftest.py
+6、安装 python setup.py install
+执行完上述操作后，可以直接在程序用使用 import Image进行使用PIL中的Image类！
+
+遇到错误：
+error: command 'gcc' failed with exit status 1 的解决办法
+解决yum install gcc python-devel
+
+#IOError: decoder jpeg not available  
+#Fix:  
+#First remove your last install!  
+rm -rf /usr/lib/python2.4/site-packages/PIL  
+rm /usr/lib/python2.4/site-packages/PIL.pth  
+rm ~/Imaging-1.1.6  
+  
+#Make sure you install at the libraries for both JPEG support and FreeType2:  
+yum install libjpeg  
+yum install libjpeg-devel  
+yum install freetype  
+yum install freetype-devel  
+  
+#Get PIL again and do the install:  
+wget http://effbot.org/media/downloads/Imaging-1.1.6.tar.gz  
+tar -zxvf Imaging-1.1.6.tar  
+cd Imaging-1.1.6/  
+python setup.py build_ext -i  
+  
+#Run the included test to make sure everything now works:  
+python selftest.py  
+  
+#If everything worked do the real install:  
+$ python setup.py install  

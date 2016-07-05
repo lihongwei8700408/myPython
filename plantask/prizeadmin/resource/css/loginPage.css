@@ -1,0 +1,58 @@
+/* 
+* @Author: WEB
+* @Date:   2015-09-29 10:14:32
+* @Last Modified by:   WEB
+* @Last Modified time: 2015-09-29 13:40:43
+*/
+/* 初始化 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section,ul,li{margin:0; padding:0; border:0; list-style: none;}
+body{font-family: Microsoft YaHei,Tahoma,Arial,sans-serif; color:#333;/*  background-color:#F7F7F7; */}
+em,i{font-style:normal;}
+strong{font-weight: normal;}
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.clearfix{zoom:1;}
+a{text-decoration:none; color:#333; font-family: Microsoft YaHei,Tahoma,Arial,sans-serif;}
+a:hover{ text-decoration:none;}
+ul,ol{list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-family: Microsoft YaHei; font-weight: normal;}
+img{border: none; display: block; vertical-align: middle; margin: 0 auto;}
+.scope{min-width:320px; max-width:540px;}
+/* 样式开始 */
+/* 插入背景图 */
+body{width: 100%; height: 100%; background: url(../images/login_bg.jpg) 0 0 no-repeat; color: #333; position: relative;}
+/* logo部分 */
+.logo_wrap{width: 100%; height: 120px; overflow: hidden;}
+h1{ float: left; width: 188px; height: 120px; padding-top: 27.5px; }
+h1 img{margin-right: 20px;}
+.logoName{color: #fff; font-size: 24px; float: left; width: 365px; height: 120px; line-height: 120px;}
+/* 登录框 */
+.login_outline{width: 342px; height: 390px; border-radius: 5px; border: 1px dashed #0095ea; padding: 9px; box-sizing:border-box; position: absolute; right: 25%; bottom: -460px; z-index: 999;}
+@media screen and (max-width:1440px){
+	.login_outline{width: 342px; height: 390px; border-radius: 5px; border: 1px dashed #0095ea; padding: 9px; box-sizing:border-box; position: absolute; right: 5%; bottom: -460px; z-index: 999;}
+}
+h2{width: 321px; height: 46px; background: linear-gradient(top,#0095ea,#007bde); background: -webkit-linear-gradient(top,#0095ea,#007bde); background: -o-linear-gradient(top,#0095ea,#007bde); background: -moz-linear-gradient(top,#0095ea,#007bde); border-radius: 5px 5px 0 0; font-size: 20px; color: #fff; line-height: 46px; padding-left: 26px; box-sizing:border-box;}
+.login_wrap{width: 321px; height: 320px; background: #e0f4ff; border-radius: 0 0 5px 5px; padding: 35px;box-sizing:border-box;}
+.loginNum input,.loginPassword input{font-size: 14px; width: 246px; height: 35px; border: 1px solid #259ee3; padding-left: 3px;}
+.loginNum p,.loginPassword p{padding-bottom: 8px;}
+.loginPassword p{padding-top: 10px;}
+.checkbox{overflow: hidden; padding: 12px 0;}
+.checkbox input{width: 16px; height: 16px; border: 1px solid #999; background: #fff; float: left;}
+.checkbox p{font-size: 14px; float: left; padding-left: 5px; line-height: 16px;}
+.login_wrap button{font-size: 14px; width: 250px; height: 35px; border: 1px solid #259ee3; background: #0095ea; color: #fff; font-family: Microsoft YaHei;}
+.login_bottom{color: #333; font-size: 14px; overflow: hidden; padding-top: 8px;}
+.forget{float: left;}
+.reg{float: right;}
+/* 底部导航 */
+.foot_nav{width: 100%; height: 60px; position: fixed; bottom: 0; left: auto; text-align: center; font-size: 12px; color: #4c4c4c; overflow: hidden; margin-bottom: 20px;}
+.foot_nav ul{width: 335px; margin: 0 auto; height: 40px; line-height: 40px; text-align: center;}
+.foot_nav ul li{float: left; padding-left: 10px; text-align: center;}
+.foot_nav ul li a{color: #4c4c4c; padding-right: 10px; display: inline-block;}
+
+
+
+
+
+
+
+
+

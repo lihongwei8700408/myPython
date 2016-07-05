@@ -1,0 +1,74 @@
+/* 
+* @Author: Administrator
+* @Date:   2015-10-01 21:46:07
+* @Last Modified by:   WEB
+* @Last Modified time: 2015-10-02 09:29:11
+*/
+/* 初始化 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section,ul,li{margin:0; padding:0; border:0; list-style: none;}
+body{font-family: Microsoft YaHei,Tahoma,Arial,sans-serif; color:#333; font-size: 12px;}
+em,i{font-style:normal;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+strong{font-weight: normal;}
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.clearfix{zoom:1;}
+a{text-decoration:none; color:#333; font-family: Microsoft YaHei,Tahoma,Arial,sans-serif;}
+a:hover{ text-decoration:none;}
+ul,ol{list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-family: Microsoft YaHei;}
+img{border: none; display: block; vertical-align: middle; margin: 0 auto;}
+.scope{min-width:320px; max-width:540px;}
+/* 样式开始 */
+.contentright{width: 817px; min-height: 330px; }
+/* con_top */
+.con_top{width: 817px; height: 110px; border: 1px solid #e0e0e0; padding: 15px 10px; box-sizing: border-box; margin-bottom: 12px; overflow: hidden;}
+.con_topLt{width: 440px; height: 80px; float: left; border-right: 1px solid #e0e0e0; box-sizing: border-box;}
+.info_pic{width: 79px; height: 79px; float: left;}
+.info_con{float: left; padding-left: 10px; font-size: 12px; height: 80px; width: 300px;}
+h2,h3{padding: 5px 0 10px 0; font-size: 14px;}
+.alipay{padding-bottom: 10px;}
+.alipay a,.insurance a{color: #3fa5e5; }
+.insurance span{display: inline-block; padding-left: 7px;}
+.con_topRt{width: 340px; height: 80px; float: left; padding-left: 10px; box-sizing: border-box;}
+.comm_con span{color:#f00;}
+.comm_con ul,.comm_con ol{width: 100%; overflow: hidden; text-align: center;}
+.comm_con ul li,.comm_con ol li{float: left; width: 92px; }
+.comm_con ol{padding-top: 8px;}
+.comm_con ol li{color: #ff4e00; }
+/* con_center */
+.con_center{width: 817px; min-height: 425px; }
+.conCenterLt{width: 817px; min-height: 425px; float: left; border: 1px solid #e0e0e0; box-sizing: border-box;}
+.sort1{height: 34px; line-height: 34px; width: 100%; background: linear-gradient(top,#f0f0f0,#e6e6e6); background: -webkit-linear-gradient(top,#f0f0f0,#e6e6e6); background: -o-linear-gradient(top,#f0f0f0,#e6e6e6); background: -moz-linear-gradient(top,#f0f0f0,#e6e6e6); padding-left: 5px; box-sizing: border-box;}
+.sectionA{padding: 15px 5px; width: 100%; height: 90px; box-sizing: border-box;}
+.item{width: 180px; float: left; padding-top: 10px;}
+.item span{color: #f00;}
+.sectionB{padding: 15px 5px; width: 100%; height: 100px; border-top: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0; box-sizing: border-box;}
+.conCenterRt{width: 355px; float: right; min-height: 425px; border: 1px solid #e0e0e0; box-sizing: border-box;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+body{ padding-top: 0;}
+.wrap{ width: 100%; font-size: 14px;}
+.head{ width: 100%; background: #44ace7; color: #ffffff; padding-top: 9px; padding-bottom: 9px; border-bottom: 1px solid #1884c2;}
+.head-wrap{ width: 94%; margin: 0 auto;}
+.top{ width: 100%;}
+.top-left{ float: left; font-size: 16px; color: rgba(255,255,255,.8);}
+.top-right{ float: right; color: #ffffff; color: rgba(255,255,255,.9);}
+.top-right img{ width: 7px; vertical-align: middle; padding-left: 6px;}
+.momeny{ width: 100%; font-size: 42px; text-align: center; padding: 10px 0;}
+.balance{ width: 100%; color: #fff; text-align: center;}
+.profit{ width: 100%; background: #fff;  border-bottom: 1px solid #f0f0f0;padding: 14px 0;}
+.profit_all{width: 100%; padding: 14px 0;}
+/*.profit-ctr{ width: 94%; margin: 0 auto;}*/
+.profit-left,.profit_all-left{ border-right: 1px solid #f0f0f0; width: 50%; float: left; padding-left: 3%;}
+.profit-right,.profit_all-right{ width: 50%; float: right; padding-left: 3%;}
+.profit_all-left,.profit_all-right{text-align: center;}
+.profit-tit{ color: #666666; width: 100%; display: block;}
+.profit-jifen{width: 100%; display: block; color: rgba(255,255,255,.8);}
+.today,.addDay{ text-align: center; color: #259ee3; width: 100%; display: block; font-size: 18px; font-weight: 500; padding-top: 12px; padding-bottom: 6px;}
+.yujifen,.yijifen{text-align: center; color: #fff; width: 100%; display: block; font-size: 34px; font-weight: 500; padding-top: 12px; padding-bottom: 6px;}
+.top-wrap{width: 100%; text-align: center; font-size: 18px; border-bottom: 1px dashed rgba(255,255,255,.8); padding-bottom: 8px;}
+/* 总额收益 */
+
+.main{ width: 100%; padding-top: 10px; background: #fafdff; padding-bottom: 20px; border-bottom: 1px solid #f0f0f0;}
+.acc{ width: 46%; margin-left:3%;color: #f69c0f; padding-bottom: 14px;float: left;}
+.abb{width:46%;margin-right:3%;color: #f69c0f; padding-bottom: 14px;float: left;text-align: right;}
+.acc-day{ color: #f69c0f; }
+.box{ width: 94%; margin: 10% auto; border-radius: 4px; border: 1px solid #bde2f7; border-radius: 2px; margin-bottom: 20px;}
+.tab{ width:100%; color:#666666; text-align:center; font-size: 14px; }
+.tab tr{ line-height:40px;}
+.tab thead{ border-bottom: 1px solid #bde2f7;}
+.tab tbody{}
+.tab tr th{text-align:center;}
+.tab td{}
+.receive{}
+.receive-btn{ margin: 7px auto; width: 48px; height: 26px; background: #f69c0f; border: 1px solid #da8809; display: block; color: #fff; border-radius: 8px; line-height: 26px;}
+.goOil{ width: 100px; height: 40px; line-height: 40px; text-align: center; border: 1px solid #ea411a; display: block; border-radius: 6px; margin: 0 auto; font-size: 16px; color: #ea411a;}
+.activity{ width: 80%; margin: 0 auto; text-align: justify; padding-bottom: 20px;}
+.act-tit{ color: #f69c0f; font-size: 16px; text-align: center; padding: 16px 0;}
+.act-tit img{width: 33%;}
+.activity p{ color: #999999; line-height: 22px; padding-left: 10px; position: relative; padding-bottom: 6px;}
+.act-m1:before{ content: "1、"; position: absolute; left: -10px; top: 0;}
+.act-m2:before{ content: "2、"; position: absolute; left: -10px; top: 0;}
+.act-m3:before{ content: "3、"; position: absolute; left: -10px; top: 0;}
+.act-m4:before{ content: "4、"; position: absolute; left: -10px; top: 0;}
+.act-m5:before{ content: "5、"; position: absolute; left: -10px; top: 0;}
+.allmain{ min-height: 80%;}
+/* all */
+.all{ width: 100%; padding-bottom: 20px; padding-top: 14px;}

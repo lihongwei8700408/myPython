@@ -1,0 +1,65 @@
+#!/usr/lib64/python2.6
+#coding=utf-8
+#红包加油卡计划任务
+
+import MySQLdb
+import time
+import datetime
+import pycurl
+import urllib2
+import urllib
+import StringIO
+import json
+try:
+	conn=MySQLdb.connect(host='127.0.0.1',user='root',passwd='123456',db='oilactivity',port=3306,charset='utf8')
+	cur=conn.cursor(cursorclass=MySQLdb.cursors.DictCursor)
+except MySQLdb.Error,e:
+	print 'Mysql connect error.'
+	exit()
+d = datetime.date.today() - datetime.timedelta(days=1)
+y = datetime.date.today() - datetime.timedelta(days=2)
+q = int(time.mktime(y.timetuple()))
+z = int(time.mktime(d.timetuple()))
+j = int(time.mktime(datetime.date.today().timetuple()))
+def getState(mid):
+	sql = 'SELECT State FROM cl_member where MemberId='+str(mid)
+	try:
+		n = cur.execute(sql)
+		r = cur.fetchone()
+		s = r['State']
+		return s
+	except:
+		return ''
+sqlm = 'SELECT OrderId,PayId,DealTime,MemberId,MoneyNum,Type,State FROM cl_paylog'
+try:
+	# 执行SQL语句
+	zn = cur.execute(sqlm)
+	result = cur.fetchall()
+	print zn
+	for row in result:
+		mid = row['MemberId']
+		print mid
+		t = row['DealTime']
+		print t
+		oid = row['OrderId']
+		pid = row['PayId']
+		print pid
+		sub = getState(mid)
+		print sub
+		m = int(row['MoneyNum']*100)
+		print m
+		state = row['State']
+		print state
+		w = 'a' + str(oid)
+		print w
+		sql = 'INSERT INTO pay_log(MemberId,Money,Type,OrderId,OrderToWe,WeOrderId,PayType,Time,State,IsSubscribe) VALUES ('+str(mid)+','+str(m)+',2,'+str(oid)+',"'+w+'","'+pid+'",1,'+str(t)+','+str(state)+','+str(sub)+')'
+		print sql
+		try:
+			n = cur.execute(sql)
+		except:
+			continue	
+except:
+	print "Error: unable to insert data"
+
+# 关闭数据库连接
+conn.close()

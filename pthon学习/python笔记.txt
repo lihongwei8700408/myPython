@@ -1,0 +1,17 @@
+Python 学习笔记
+
+1.一般的Unix系统都会自带python  不过版本会比较低
+2.需要手动安装MySQLdb模块 快捷命令：快速安装MySQLdb扩展：sudo yum install MySQL-python，会自动匹配版本问题
+3.建立.py文件，用命令python xx.py执行即可
+4.在脚本的第一行，加
+#! /usr/local/bin/python //python安装路径
+5.使用什么模块必须要引入
+例如：import MySQLdb
+ import time 
+import datetime 
+import pycurl
+ import urllib2
+ import urllib
+ import StringIO
+ import json
+ import sys
